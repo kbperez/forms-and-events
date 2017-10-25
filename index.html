@@ -4,20 +4,20 @@
   <head>
     <title>Forms And Events Demo</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
     <!-- content goes here -->
-      <form id="sample-form">
+      <form id="sample_form">
         <fieldset>
           <label for="first">first name:</label>
-          <label for="text" name="first" placeholder="enter your first name" required>
+          <input for="text" name="first" placeholder="enter your first name" required>
         </fieldset>
 
         <fieldset>
           <label for="last">last name:</label>
-          <label for="text" name="last" placeholder="enter your last name" required>
+          <input for="text" name="last" placeholder="enter your last name" required>
         </fieldset>
 
         <fieldset>
@@ -27,11 +27,11 @@
 
         <fieldset>
           <label for="future-classes">interested in future classes</label>
-          <input type="radio" name="future-classes" value="yes">yes
-          <input type="radio" name="future-classes" value="no">no
+          <input type="radio" name="future_classes" value="yes">yes
+          <input type="radio" name="future_classes" value="no">no
         </fieldset>
 
-        <button id="submit-btn" type="submit">add student</button>
+        <button id="submit_btn" type="submit">add student</button>
 
       </form>
 
@@ -43,7 +43,7 @@
             <th>enrolled</th>
             <th>future classes?</th>
           </thead>
-          <tbody id="data">
+          <tbody id="student_table">
             <!-- student table data goes here -->
           </tbody>
         </table>
