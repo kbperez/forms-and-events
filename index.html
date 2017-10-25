@@ -3,21 +3,51 @@
 
   <head>
     <title>Forms And Events Demo</title>
-
-      <link rel="stylesheet" href="reset.css">
-      <link rel="stylesheet" href="reset.css">
-
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="reset.css">
   </head>
 
-<body>
-<!-- content goes here -->
+  <body>
+    <!-- content goes here -->
+      <form id="sample-form">
+        <fieldset>
+          <label for="first">first name:</label>
+          <label for="text" name="first" placeholder="enter your first name" required>
+        </fieldset>
 
+        <fieldset>
+          <label for="last">last name:</label>
+          <label for="text" name="last" placeholder="enter your last name" required>
+        </fieldset>
 
+        <fieldset>
+          <label for="enrolled">currently enrolled?</label>
+          <input type="checkbox" name="enrolled" value="enrolled">
+        </fieldset>
 
-<script src="app.js"></script>
+        <fieldset>
+          <label for="future-classes">interested in future classes</label>
+          <input type="radio" name="future-classes" value="yes">yes
+          <input type="radio" name="future-classes" value="no">no
+        </fieldset>
 
-</body>
+        <button id="submit-btn" type="submit">add student</button>
 
+      </form>
 
-
+      <section id="students">
+        <table>
+          <thead>
+            <th>first name</th>
+            <th>last name</th>
+            <th>enrolled</th>
+            <th>future classes?</th>
+          </thead>
+          <tbody id="data">
+            <!-- student table data goes here -->
+          </tbody>
+        </table>
+      </section>
+      <script src="app.js"></script>
+    </body>
   </html>
